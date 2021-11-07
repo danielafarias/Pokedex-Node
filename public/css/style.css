@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rajdhani", sans-serif;
+  color: #33363a;
+}
+
+body {
+  background-image: url("../img/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+a img {
+  width: 15%;
+}
+
+.icon.icon-tabler.icon-tabler-click {
+  color: #33363a;
+}
+
+.pikachu-icon {
+  width: 15%;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #f21b1b;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #33363a;
+}
+
+main {
+  margin: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  width: 40%;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.card-image {
+  width: 50%;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.card-title h2 {
+  margin-right: 10px;
+}
+
+.card-title h3 {
+  color: #565b61;
+}
+
+.card-type {
+  font-weight: bold;
+  background-color: #ff1a1a;
+  border-radius: 5px;
+  color: #d8e5ea;
+  padding: 2px 3px;
+  width: 2.8rem;
+  margin: 1rem 0;
+}
+
+.card-type p {
+  color: #d8e5ea;
+}
+
+.card-infos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+footer small {
+  color: #fff800ff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+footer small a {
+  color: #ff1a1a;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+/* Register Page */
+
+form {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+form a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form div {
+    margin: 0.5rem 0;
+}
+
+form h2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+form h2 svg {
+    margin: 0 5px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0.5rem 0;
+}
+
+.pokemon-icon {
+    width: 5%;
+}
+
+input {
+    padding: 1rem 2rem;
+    border: 2px solid #ff1a1a;
+    border-radius: 5px;
+}
+
+.register-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}

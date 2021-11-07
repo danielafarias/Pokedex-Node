@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="/img/pokebola.png" />
+    <title><%= titulo %></title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+          <a class="register-link" href="/">
+        <img src="img/pikachu.png" alt="Pikachu" class="pikachu-icon" />
+        <h1>Pokédex</h1>
+    </a>
+      </div>
+
+      <nav>
+        <a
+          href="https://github.com/danielafarias/Pokedex-Node"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="/img/meowth.png" alt="Meowth" />
+        </a>
+        <a href="/register">
+          <img src="/img/ovo.png" alt="ovo" />
+        </a>
+      </nav>
+    </header>
+
+    <main>
+        <form id="form" action="/pokemon" method="POST">
+        <figure class="icons">
+          <img class="pokemon-icon" src="img/p1.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="img/p2.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="img/p3.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="img/p4.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="img/p5.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="img/p6.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="img/p7.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="img/p8.png" alt="pokemon-icon" />
+        </figure>
+
+        <h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-pokeball"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="9" cy="9" r="9" transform="translate(3 3)"></circle>
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M3 12h6m6 0h6"></path></svg>
+            Registre um Pokemon
+        </h2>
+
+        <div class="inputs">
+          <label for="nome">Nome:</label>
+          <input name="nome" type="text" id="nome" placeholder="Ex: Bulbasaur" />
+        </div>
+        <div class="inputs">
+          <label for="numero">Número:</label>
+          <input name="numero" type="text" id="numero" placeholder="Ex: Nº001" />
+        </div>
+        <div class="inputs">
+          <label for="descricao">Descrição:</label>
+          <input name="descricao" type="text" id="descricao" placeholder="Descrição do Pokemon" />
+        </div>
+        <div class="inputs">
+          <label for="tipo">Tipo:</label>
+          <input name="tipo" type="text" id="tipo" placeholder="Ex: Grass" />
+        </div>
+        <div class="inputs">
+          <label for="altura">Altura:</label>
+          <input name="altura" type="text" id="altura" placeholder="Ex: 0.7m" />
+        </div>
+        <div class="inputs">
+          <label for="peso">Peso:</label>
+          <input name="peso" type="text" id="peso" placeholder="Ex: 0.9kg" />
+        </div>
+        <div class="inputs">
+          <label for="categoria">Categoria:</label>
+          <input name="categoria" type="text" id="categoria" placeholder="Ex: Seed" />
+        </div>
+        <div class="inputs">
+          <label for="habilidade">Habilidade:</label>
+          <input name="habilidade" type="text" id="habilidade" placeholder="Ex: Overgrow" />
+        </div>
+
+        <a onclick="document.getElementById('form').submit()"><img src="img/gotcha.png" /></a>
+
+        <figure class="icons">
+          <img class="pokemon-icon" src="img/p9.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="img/p10.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="img/p11.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="img/p12.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="img/p13.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="img/p14.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="img/p15.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="img/p16.png" alt="pokemon-icon" />
+        </figure>
+    </form>
+    </main>
+
+    <footer>
+      <small>
+        &copy; Ícones feitos por
+        <a
+          href="https://www.flaticon.com/br/autores/roundicons-freebies"
+          target="_blank"
+          rel="noreferrer"
+          title="Roundicons Freebies"
+        >
+          Roundicons Freebies
+        </a>
+        from
+        <a
+          href="https://www.flaticon.com/br/"
+          title="Flaticon"
+          target="_blank"
+          rel="noreferrer"
+        >
+          www.flaticon.com
+        </a>
+        | e por
+        <a
+          href="https://heroicons.com/"
+          title="Heroicons"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Heroicons
+        </a>
+        e
+        <a
+          href="https://tabler-icons.io/"
+          title="Tabler icons"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Tabler icons
+        </a>
+      </small>
+    </footer>
+  </body>
+</html>
