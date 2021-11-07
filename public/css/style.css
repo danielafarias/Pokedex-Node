@@ -119,6 +119,24 @@ main {
   justify-content: space-between;
 }
 
+.card-btn {
+  border: none;
+  background-color: #fff800ff;
+  color: #33363a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-btn-link {
+  text-decoration: none;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -140,6 +158,7 @@ footer small a {
   margin: 0 5px;
   text-decoration: none;
 }
+
 
 /* Register Page */
 
@@ -201,4 +220,38 @@ input {
 .inputs {
     display: flex;
     flex-direction: column;
+}
+
+/* Details page */
+
+.details {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.details a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details div {
+    margin: 0.5rem 0;
+}
+
+.details h2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.details h2 svg {
+    margin: 0 5px;
 }

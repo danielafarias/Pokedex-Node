@@ -32,7 +32,7 @@
     </header>
 
     <main>
-      <form id="form" action="/pokemon" method="POST">
+      <section class="details">
         <figure class="icons">
           <img class="pokemon-icon" src="img/p1.png" alt="pokemon-icon" />
           <img class="pokemon-icon" src="img/p2.png" alt="pokemon-icon" />
@@ -62,71 +62,29 @@
             <circle cx="12" cy="12" r="3"></circle>
             <path d="M3 12h6m6 0h6"></path>
           </svg>
-          Registre um Pokemon
+          Detalhes do Pokemon
         </h2>
 
-        <div class="inputs">
-          <label for="nome">Nome:</label>
-          <input
-            name="nome"
-            type="text"
-            id="nome"
-            placeholder="Ex: Bulbasaur"
-          />
-        </div>
-        <div class="inputs">
-          <label for="numero">Número:</label>
-          <input
-            name="numero"
-            type="text"
-            id="numero"
-            placeholder="Ex: Nº001"
-          />
-        </div>
-        <div class="inputs">
-          <label for="descricao">Descrição:</label>
-          <input
-            name="descricao"
-            type="text"
-            id="descricao"
-            placeholder="Descrição do Pokemon"
-          />
-        </div>
-        <div class="inputs">
-          <label for="tipo">Tipo:</label>
-          <input name="tipo" type="text" id="tipo" placeholder="Ex: Grass" />
-        </div>
-        <div class="inputs">
-          <label for="altura">Altura:</label>
-          <input name="altura" type="text" id="altura" placeholder="Ex: 0.7m" />
-        </div>
-        <div class="inputs">
-          <label for="peso">Peso:</label>
-          <input name="peso" type="text" id="peso" placeholder="Ex: 0.9kg" />
-        </div>
-        <div class="inputs">
-          <label for="categoria">Categoria:</label>
-          <input
-            name="categoria"
-            type="text"
-            id="categoria"
-            placeholder="Ex: Seed"
-          />
-        </div>
-        <div class="inputs">
-          <label for="habilidade">Habilidade:</label>
-          <input
-            name="habilidade"
-            type="text"
-            id="habilidade"
-            placeholder="Ex: Overgrow"
-          />
-        </div>
-
-        <a onclick="document.getElementById('form').submit()"
-          ><img src="img/gotcha.png"
-        /></a>
-
+       
+            <section class="card" key=<%= pokemons.numero %>>
+              <img
+                src=<%= pokemons.imagem %>
+                alt="bulbasaur"
+                class="card-image"
+              />
+              <article class="card-content">
+                <div class="card-title">
+                  <h2><%= pokemons.nome %></h2>
+                  <h3>Nº<%= pokemons.numero %></h3>
+                </div>
+                <div class="card-type">
+                  <p><%= pokemons.tipo %></p>
+                </div>
+      
+                
+              </article>
+            </section>
+           
         <figure class="icons">
           <img class="pokemon-icon" src="img/p9.png" alt="pokemon-icon" />
           <img class="pokemon-icon" src="img/p10.png" alt="pokemon-icon" />
@@ -137,7 +95,7 @@
           <img class="pokemon-icon" src="img/p15.png" alt="pokemon-icon" />
           <img class="pokemon-icon" src="img/p16.png" alt="pokemon-icon" />
         </figure>
-      </form>
+      </section>
     </main>
 
     <footer>
