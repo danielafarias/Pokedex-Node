@@ -39,7 +39,7 @@ app.get("/register", (req, res) => {
 });
 
 app.get("/details/:numero", (req, res) => {
-  res.render("details", { titulo: "Pokédex | Detalhes", pokemons: pokemon, numero: req.params.numero });
+  res.render("details", { titulo: "Pokédex | Detalhes", pokemons: pokemon.filter(i => i.numero === req.params.numero), numero: req.params.numero });
 });
 
 app.post("/pokemon", (req, res) => {

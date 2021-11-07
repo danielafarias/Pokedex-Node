@@ -12,7 +12,7 @@
     <header>
       <div class="logo">
         <a class="register-link" href="/">
-          <img src="img/pikachu.png" alt="Pikachu" class="pikachu-icon" />
+          <img src="../img/pikachu.png" alt="Pikachu" class="pikachu-icon" />
           <h1>Pokédex</h1>
         </a>
       </div>
@@ -23,10 +23,10 @@
           target="_blank"
           rel="noreferrer"
         >
-          <img src="/img/meowth.png" alt="Meowth" />
+          <img src="../img/meowth.png" alt="Meowth" />
         </a>
         <a href="/register">
-          <img src="/img/ovo.png" alt="ovo" />
+          <img src="../img/ovo.png" alt="ovo" />
         </a>
       </nav>
     </header>
@@ -34,14 +34,14 @@
     <main>
       <section class="details">
         <figure class="icons">
-          <img class="pokemon-icon" src="img/p1.png" alt="pokemon-icon" />
-          <img class="pokemon-icon" src="img/p2.png" alt="pokemon-icon" />
-          <img class="pokemon-icon" src="img/p3.png" alt="pokemon-icon" />
-          <img class="pokemon-icon" src="img/p4.png" alt="pokemon-icon" />
-          <img class="pokemon-icon" src="img/p5.png" alt="pokemon-icon" />
-          <img class="pokemon-icon" src="img/p6.png" alt="pokemon-icon" />
-          <img class="pokemon-icon" src="img/p7.png" alt="pokemon-icon" />
-          <img class="pokemon-icon" src="img/p8.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p1.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p2.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p3.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p4.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p5.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p6.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p7.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p8.png" alt="pokemon-icon" />
         </figure>
 
         <h2>
@@ -65,8 +65,8 @@
           Detalhes do Pokemon
         </h2>
 
-       
-            <section class="card" key=<%= pokemons.numero %>>
+        <% pokemons.map ( obj => { %>
+            <section class="card">
               <img
                 src=<%= pokemons.imagem %>
                 alt="bulbasaur"
@@ -74,26 +74,26 @@
               />
               <article class="card-content">
                 <div class="card-title">
-                  <h2><%= pokemons.nome %></h2>
-                  <h3>Nº<%= pokemons.numero %></h3>
+                  <h2><%= obj.nome %></h2>
+                  <h3>Nº<%= obj.numero %></h3>
                 </div>
                 <div class="card-type">
-                  <p><%= pokemons.tipo %></p>
+                  <p><%= obj.tipo %></p>
                 </div>
       
                 
               </article>
             </section>
-           
+            <% }) %>
         <figure class="icons">
-          <img class="pokemon-icon" src="img/p9.png" alt="pokemon-icon" />
-          <img class="pokemon-icon" src="img/p10.png" alt="pokemon-icon" />
-          <img class="pokemon-icon" src="img/p11.png" alt="pokemon-icon" />
-          <img class="pokemon-icon" src="img/p12.png" alt="pokemon-icon" />
-          <img class="pokemon-icon" src="img/p13.png" alt="pokemon-icon" />
-          <img class="pokemon-icon" src="img/p14.png" alt="pokemon-icon" />
-          <img class="pokemon-icon" src="img/p15.png" alt="pokemon-icon" />
-          <img class="pokemon-icon" src="img/p16.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p9.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p10.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p11.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p12.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p13.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p14.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p15.png" alt="pokemon-icon" />
+          <img class="pokemon-icon" src="../img/p16.png" alt="pokemon-icon" />
         </figure>
       </section>
     </main>
