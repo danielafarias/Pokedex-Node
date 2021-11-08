@@ -72,6 +72,7 @@
             type="text"
             id="imagem"
             placeholder="Link da imagem"
+            required
           />
         </div>
         <div class="inputs">
@@ -81,6 +82,7 @@
             type="text"
             id="nome"
             placeholder="Ex: Bulbasaur"
+            required
           />
         </div>
         <div class="inputs">
@@ -90,6 +92,7 @@
             type="text"
             id="numero"
             placeholder="Ex: Nº001"
+            required
           />
         </div>
         <div class="inputs">
@@ -99,19 +102,20 @@
             type="text"
             id="descricao"
             placeholder="Descrição do Pokemon"
+            required
           />
         </div>
         <div class="inputs">
           <label for="tipo">Tipo:</label>
-          <input name="tipo" type="text" id="tipo" placeholder="Ex: Grass" />
+          <input name="tipo" type="text" id="tipo" placeholder="Ex: Grass" required/>
         </div>
         <div class="inputs">
           <label for="altura">Altura:</label>
-          <input name="altura" type="text" id="altura" placeholder="Ex: 0.7m" />
+          <input name="altura" type="text" id="altura" placeholder="Ex: 0.7m" required/>
         </div>
         <div class="inputs">
           <label for="peso">Peso:</label>
-          <input name="peso" type="text" id="peso" placeholder="Ex: 0.9kg" />
+          <input name="peso" type="text" id="peso" placeholder="Ex: 0.9kg" required/>
         </div>
         <div class="inputs">
           <label for="categoria">Categoria:</label>
@@ -120,6 +124,7 @@
             type="text"
             id="categoria"
             placeholder="Ex: Seed"
+            required
           />
         </div>
         <div class="inputs">
@@ -129,12 +134,13 @@
             type="text"
             id="habilidade"
             placeholder="Ex: Overgrow"
+            required
           />
         </div>
 
-        <a onclick="document.getElementById('form').submit()"
+        <button class="register-btn" type="submit"
           ><img src="img/gotcha.png"
-        /></a>
+        /></button>
 
         <figure class="icons">
           <img class="pokemon-icon" src="img/p9.png" alt="pokemon-icon" />

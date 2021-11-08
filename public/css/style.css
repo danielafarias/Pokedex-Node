@@ -29,11 +29,54 @@ nav {
   align-items: center;
 }
 
+section#message {
+  padding: 1.5rem;
+  background-color: rgb(197, 255, 214);
+  color: #004d04;
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section#message p {
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+}
+
+span#close {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+span#close:hover{
+  color: #f21b1b;
+  transform: scale(1.5);
+}
+
 a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin: 0.5rem;
+  transition:all ease 0.2s;
+}
+
+a:hover{
+  filter:brightness(120%);
+  opacity: 0.6;
 }
 
 .logo {
@@ -217,6 +260,22 @@ input {
     justify-content: flex-start;
 }
 
+.register-btn {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition:all ease 0.2s;
+}
+
+.register-btn:hover{
+  filter:brightness(120%);
+  opacity: 0.6;
+}
+
+.register-btn img {
+  width: 20%;
+}
+
 .inputs {
     display: flex;
     flex-direction: column;
@@ -254,4 +313,23 @@ input {
 
 .details h2 svg {
     margin: 0 5px;
+}
+
+.details-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.details-card figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/card-background.svg");
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+.details-card-content {
+  margin: 2rem;
 }

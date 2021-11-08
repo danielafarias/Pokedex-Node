@@ -66,22 +66,43 @@
         </h2>
 
         <% pokemons.map ( obj => { %>
-            <section class="card">
-              <img
-                src=<%= obj.imagem %>
-                alt="bulbasaur"
-                class="card-image"
-              />
-              <article class="card-content">
+            <section class="details-card">
+                <figure>
+                    <img
+                        src=<%= obj.imagem %>
+                        alt="bulbasaur"
+                        class="card-image"
+                    />
+                </figure>
+              <article class="details-card-content">
                 <div class="card-title">
                   <h2><%= obj.nome %></h2>
                   <h3>Nº<%= obj.numero %></h3>
                 </div>
+                <div class="card-description">
+                    <p><%= obj.descricao %></p>
+                  </div>
                 <div class="card-type">
                   <p><%= obj.tipo %></p>
                 </div>
-      
-                
+                <div class="card-infos">
+                    <div>
+                        <h4>Altura:</h4>
+                        <p><%= obj.altura %>m</p>
+                    </div>
+                    <div>
+                        <h4>Peso:</h4>
+                        <p><%= obj.peso %>kg</p>
+                    </div>
+                    <div>
+                        <h4>Categoria:</h4>
+                        <p><%= obj.categoria %></p>
+                    </div>
+                    <div>
+                        <h4>Habilidade:</h4>
+                        <p><%= obj.habilidade %></p>
+                    </div>
+                </div>
               </article>
             </section>
             <% }) %>
