@@ -47,20 +47,20 @@
       <% pokemons.map ( obj => { %>
       <section class="card">
         <img
-          src=<%= obj.imagem %>
+          src=<%= obj.image %>
           alt="bulbasaur"
           class="card-image"
         />
         <article class="card-content">
           <div class="card-title">
-            <h2><%= obj.nome %></h2>
-            <h3>Nº<%= obj.numero %></h3>
+            <h2><%= obj.name %></h2>
+            <h3>Nº<%= obj.number %></h3>
           </div>
           <div class="card-type">
-            <p><%= obj.tipo %></p>
+            <p><%= obj.type %></p>
           </div>
 
-          <a class="card-btn-link" href="/details/<%= obj.numero %>"><button class="card-btn" >
+          <a class="card-btn-link" href="/details/<%= obj.number %>"><button class="card-btn" >
             Veja mais
             <svg
               xmlns="http://www.w3.org/2000/svg"

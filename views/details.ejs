@@ -31,6 +31,8 @@
       </nav>
     </header>
 
+   
+
     <main>
       <section class="details">
         <figure class="icons">
@@ -65,47 +67,47 @@
           Detalhes do Pokemon
         </h2>
 
-        <% pokemons.map ( obj => { %>
+       
             <section class="details-card">
                 <figure>
                     <img
-                        src=<%= obj.imagem %>
+                        src=<%= pokemons.image %>
                         alt="bulbasaur"
                         class="card-image"
                     />
                 </figure>
               <article class="details-card-content">
                 <div class="card-title">
-                  <h2><%= obj.nome %></h2>
-                  <h3>Nº<%= obj.numero %></h3>
+                  <h2><%= pokemons.name %></h2>
+                  <h3>Nº<%= pokemons.number %></h3>
                 </div>
                 <div class="card-description">
-                    <p><%= obj.descricao %></p>
+                    <p><%= pokemons.description %></p>
                   </div>
                 <div class="card-type">
-                  <p><%= obj.tipo %></p>
+                  <p><%= pokemons.type %></p>
                 </div>
                 <div class="card-infos">
                     <div>
                         <h4>Altura:</h4>
-                        <p><%= obj.altura %>m</p>
+                        <p><%= pokemons.height %>m</p>
                     </div>
                     <div>
                         <h4>Peso:</h4>
-                        <p><%= obj.peso %>kg</p>
+                        <p><%= pokemons.weight %>kg</p>
                     </div>
                     <div>
                         <h4>Categoria:</h4>
-                        <p><%= obj.categoria %></p>
+                        <p><%= pokemons.category %></p>
                     </div>
                     <div>
                         <h4>Habilidade:</h4>
-                        <p><%= obj.habilidade %></p>
+                        <p><%= pokemons.hability %></p>
                     </div>
                 </div>
               </article>
             </section>
-            <% }) %>
+           
         <figure class="icons">
           <img class="pokemon-icon" src="../img/p9.png" alt="pokemon-icon" />
           <img class="pokemon-icon" src="../img/p10.png" alt="pokemon-icon" />
