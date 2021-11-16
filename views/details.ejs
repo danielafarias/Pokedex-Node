@@ -67,7 +67,7 @@
           Detalhes do Pokemon
         </h2>
 
-       
+        <% pokemons.map ( pokemons => { %>
             <section class="details-card">
                 <figure>
                     <img
@@ -107,7 +107,8 @@
                 </div>
               </article>
             </section>
-           
+            <% }) %>
+
         <figure class="icons">
           <img class="pokemon-icon" src="../img/p9.png" alt="pokemon-icon" />
           <img class="pokemon-icon" src="../img/p10.png" alt="pokemon-icon" />
